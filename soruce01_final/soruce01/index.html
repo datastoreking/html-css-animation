@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_Animation</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+	
+
+	
+<script>
+function changeImage1() {
+    var img = document.getElementById("img1");
+    img.src = images1[x1];
+    x1++;        
+    if(x1 >= images1.length) {
+        x1 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage1()",3000);
+
+}
+
+
+
+function changeImage2() {
+    var img = document.getElementById("img2");
+    img.src = images2[x2];
+    x2++;        
+    if(x2 >= images2.length) {
+        x2 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage2()",3000);
+
+}
+
+
+
+
+function changeImage3() {
+    var img = document.getElementById("img3");
+    img.src = images3[x3];
+    x3++;        
+    if(x3 >= images3.length) {
+        x3 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage3()",3000);
+
+}
+
+
+function changeImage4() {
+    var img = document.getElementById("img4");
+    img.src = images4[x4];
+    x4++;        
+    if(x4 >= images4.length) {
+        x4 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage4()",3000);
+
+}
+
+
+function changeImage5() {
+    var img = document.getElementById("img5");
+    img.src = images5[x5];
+    x5++;        
+    if(x5 >= images5.length) {
+        x5 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage5()",3000);
+
+}
+
+function changeImage6() {
+    var img = document.getElementById("img6");
+    img.src = images6[x6];
+    x6++;        
+    if(x6 >= images6.length) {
+        x6 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage6()",3000);
+
+}
+
+
+function changeImage7() {
+    var img = document.getElementById("img7");
+    img.src = images7[x7];
+    x7++;        
+    if(x7 >= images7.length) {
+        x7 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage7()",3000);
+
+}
+
+
+
+
+
+function changeImage8() {
+    var img = document.getElementById("img8");
+    img.src = images8[x8];
+    x8++;        
+    if(x8 >= images8.length) {
+        x8 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage8()",3000);
+
+}
+
+
+
+function changeImage9() {
+    var img = document.getElementById("img9");
+    img.src = images9[x9];
+    x9++;        
+    if(x9 >= images9.length) {
+        x9 = 0;
+    } 
+    fadeImg(img, 100, true);
+    setTimeout("changeImage9()",3000);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function fadeImg(el, val, fade) {
+    if(fade === true) {
+        val--;
+    } else {
+        val ++;
+    }       
+    if(val > 0 && val < 100) {
+        el.style.opacity = val / 100;
+        setTimeout(function(){ fadeImg(el, val, fade); }, 3000);
+    }
+}
+
+var images1 = [], x1 = 0;
+images1[0] = "assets/img/00004.png";
+images1[1] = "assets/img/00005.png";
+images1[2] = "assets/img/00014.png";
+setTimeout("changeImage1()", 3000);
+
+
+var images2 = [], x2 = 0;
+images2[0] = "assets/img/00016.png";
+images2[1] = "assets/img/00019.png";
+images2[2] = "assets/img/00020.png";
+setTimeout("changeImage2()", 3000);
+
+
+
+var images3 = [], x3 = 0;
+images3[0] = "assets/img/00030.png";
+images3[1] = "assets/img/00053.png";
+images3[2] = "assets/img/00057.png";
+setTimeout("changeImage3()", 3000);
+
+
+var images4 = [], x4 = 0;
+images4[0] = "assets/img/00060.png";
+images4[1] = "assets/img/00066.png";
+images4[2] = "assets/img/00086.png";
+setTimeout("changeImage4()", 3000);
+
+
+
+var images5 = [], x5 = 0;
+images5[0] = "assets/img/1359.png";
+images5[1] = "assets/img/1356.png";
+images5[2] = "assets/img/1351.png";
+setTimeout("changeImage5()", 3000);
+
+
+var images6 = [], x6 = 0;
+images6[0] = "assets/img/1349.png";
+images6[1] = "assets/img/1347.png";
+images6[2] = "assets/img/1343.png";
+setTimeout("changeImage6()", 3000);
+
+
+var images7 = [], x7 = 0;
+images7[0] = "assets/img/00087.png";
+images7[1] = "assets/img/00112.png";
+images7[2] = "assets/img/00125.png";
+setTimeout("changeImage7()", 3000);
+
+
+
+var images8 = [], x8 = 0;
+images8[0] = "assets/img/1333.png";
+images8[1] = "assets/img/1334.png";
+images8[2] = "assets/img/1341.png";
+setTimeout("changeImage8()", 3000);
+
+
+
+var images9 = [], x9 = 0;
+images9[0] = "assets/img/1343.png";
+images9[1] = "assets/img/1334.png";
+images9[2] = "assets/img/1349.png";
+setTimeout("changeImage9()", 3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <section id="project">
+        <div class="waffles">
+
+            <!--<span class="logo"></span>-->
+			
+            <ul class="header">
+			<img src="assets/img/logo.png" style="width:102px; height:57px;margin-right:30px;position:relative;bottom:10px;">
+				
+                <li>
+                    <a href="#">Project</a>
+                </li>
+                <li>
+                    <a href="#">Roadmap</a>
+                </li>
+                <li>
+                    <a href="#">Store</a>
+                </li>
+                <li>
+                    <a href="#">Opensea</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+            <span class="social-icon-bar">
+                <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-discord"></i></span>
+            </span>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="img-group">
+                        <img src="./assets/img/1343.png" class="groupimg" alt="" id="img1">
+                        <img src="./assets/img/1333.png" class="groupimg" alt=""  id="img2">
+                        <img src="./assets/img/1356.png" class="groupimg" alt=""  id="img3">
+                        <img src="./assets/img/1347.png" class="groupimg" alt=""  id="img4">
+                        <img src="./assets/img/1351.png" class="groupimg" alt=""  id="img5">
+                        <img src="./assets/img/1341.png" class="groupimg" alt=""  id="img6">
+                        <img src="./assets/img/1359.png" class="groupimg" alt=""  id="img7">
+                        <img src="./assets/img/1334.png" class="groupimg" alt=""  id="img8">
+                        <img src="./assets/img/1349.png" class="groupimg" alt=""  id="img9">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="introducing-section">
+                        <p class="introducing-letter">Introducing</p>
+                        <p class="waffles-letter">Waffles</p>
+                        <p class="waffles-content">5,555 unique Waffles living on<br> the Ethereum blockchain as<br> ERC-721 tokens.</p>
+                        <button class="mint-btn"><span><img src="./assets/img/Kiwi.png" alt=""></span> <span id="mint">Mint Now</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="whoweare">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="whoweare-content">
+                        <h5>Who we Are?</h5>
+                        <p>CryptoDads is 10,000 randomly generated &<br> unique art pieces carefully chosen by some of<br> the greatest dads themselves.</p>
+                        <p>Each dad found themselves in the midst of a<br> midlife crisis and fell into the dark abyss of<br> shit coins and expensive jpegs of rocks. Some<br> made it out with diamonds, and others never recovered.</p>
+                        <button class="mint-btn"><span><img src="./assets/img/Kiwi.png" alt=""></span> <span id="mint">Mint Now</span></button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mint-img-group">
+                        <span class="mint-img"><img src="./assets/img/Group 21.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 22.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 23.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 24.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 25.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 41.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 29.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 28.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 27.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 26.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 31.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 32.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 33.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 34.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 35.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 36.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 37.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 38.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 42.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 40.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 41.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 42.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 43.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 44.png" alt=""></span>
+                        <span class="mint-img"><img src="./assets/img/Group 45.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap">
+        <div class="row outbox">
+            <div class="col-sm-12">
+                <ul class="timeline">
+                    <li>
+                        <h5 class="roadmap-title">Roadmap</h5>
+                        <p class="roadmap-describe">This roadmap outlines our goals and where we want to take MekaVerse. We<br> have a lot of ideas and concepts that we are working on. It may evolve over time<br> and hopefully become even better!</p>
+                    </li>
+                    <li class="sale">
+                        <span class="tick"><i class="fas fa-check"></i></span>
+                        <h5 class="sale-title">10% sale</h5>
+                        <p class="sale-content">We are going to pick 30 random Chibi Apes owners and send them their 3D printed toys! We repeat this again for 2k and 3k.</p>
+                    </li>
+                    <li class="sale">
+                        <span class="tick"><i class="fas fa-check"></i></span>
+                        <h5 class="sale-title">20% sale</h5>
+                        <p class="sale-content">We will donate 2 ETH to charitable organizations. The community will decide where the money goes when we hit this milestone.</p>
+                    </li>
+                </ul>
+                <ul class="timeline-number">
+                    <li class="sale-number">
+                        <span class="tick-number">3</span>
+                        <h5 class="sale-title">50% sale</h5>
+                        <p class="sale-number-content">We will initiate a community wallet with 4 ETH. We will be forming a future DAO to direct the use of these funds.</p>
+                    </li>
+                    <li class="sale-number">
+                        <span class="tick-number">4</span>
+                        <h5 class="sale-title">75% sale</h5>
+                        <p class="sale-number-content">We will contribute an additional 4 ETH to the future DAO and drive a community led effort to buy NFT art, from various artists.</p>
+                    </li>
+                    <li class="sale-number">
+                        <span class="tick-number">5</span>
+                        <h5 class="sale-title">100% sale</h5>
+                        <p class="sale-number-content">We will identify and purchase a prime lot in Decentraland and create wearables for Decentraland characters, drawn from the Chibi Universe, that can only be claimed by Chibi Ape holders.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer-outbox" >
+		
+            <!-- <span class="tick-number">5</span> -->
+            <!-- <span class="footer-circle"><i class="fas fa-circle"></i></span> -->
+            <h5 class="footer-title">Join our channel to stay updated</h5>
+            <p class="footer-social-bar">
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-discord"></i></span>
+            </p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="outbox">
+            <h5 class="faq-title">F.A.Q</h5>
+
+            <div class="accordion">
+
+                <div class="container">
+                    <div class="label">What is HTML</div>
+                    <div class="content">
+                        CryptoDads will be available to mint at www.CryptoDadsNFT.com.<br> Presale begins on September 7th @5PM EST.<br> Public Launch begins on September 10th @5PM EST.
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="label">What is CSS?</div>
+                    <div class="content">
+                        CryptoDads will be available to mint at www.CryptoDadsNFT.com.<br> Presale begins on September 7th @5PM EST.<br> Public Launch begins on September 10th @5PM EST.
+                    </div>
+                </div>
+                <div class="container active">
+                    <div class="label">What is JavaScript?</div>
+                    <div class="content">
+                        CryptoDads will be available to mint at www.CryptoDadsNFT.com.<br> Presale begins on September 7th @5PM EST.<br> Public Launch begins on September 10th @5PM EST.
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="label">What is React?</div>
+                    <div class="content">
+                        CryptoDads will be available to mint at www.CryptoDadsNFT.com.<br> Presale begins on September 7th @5PM EST.<br> Public Launch begins on September 10th @5PM EST.
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="label">What is PHP?</div>
+                    <div class="content">
+                        CryptoDads will be available to mint at www.CryptoDadsNFT.com.<br> Presale begins on September 7th @5PM EST.<br> Public Launch begins on September 10th @5PM EST.
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="label">What is Node JS?</div>
+                    <div class="content">
+                        CryptoDads will be available to mint at www.CryptoDadsNFT.com.<br> Presale begins on September 7th @5PM EST.<br> Public Launch begins on September 10th @5PM EST.
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<marquee direction="left" scrolldelay="0" scrollamount="10">
+        <div class="mint-img-bottom-bar">
+		
+            <span class="mint-img-bottom"><img src="./assets/img/Group 21.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 22.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 23.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 24.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 25.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 41.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 29.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 28.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 27.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 26.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 31.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 32.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 33.png" alt=""></span>
+            <span class="mint-img-bottom"><img src="./assets/img/Group 34.png" alt=""></span>
+		
+        </div>
+		</marquee>
+
+    </section>
+
+    <footer>
+        <div class="socialicon-bar">
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-discord"></i></span>
+        </div>
+        <p class="footer-content">
+            © Chibi Apes - Est. 2021
+        </p>
+    </footer>
+
+    <script>
+        const accordion = document.getElementsByClassName('container');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                for (i = 0; i < accordion.length; i++) {
+                    accordion[i].classList.remove('active')
+                }
+                console.log(this)
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+
+</html>
